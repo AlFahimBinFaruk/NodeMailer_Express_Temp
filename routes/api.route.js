@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const transporter = require("../config/emailConfig");
+//handle send mail req
 router.get("/send-mail", async (req, res, next) => {
   try {
     // send mail with defined transport object
